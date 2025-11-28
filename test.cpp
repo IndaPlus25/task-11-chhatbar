@@ -7,7 +7,7 @@ using namespace std;
 void insertionSort(std::vector<int>& arr);
 void mergeSort(std::vector<int>& arr);
 void selectionSort(std::vector<int>& arr);
-void quickSort(std::vector<int>& arr);
+void bubbleSort(std::vector<int>& arr);
 
 bool noDataLoss(vector <int> initialA, vector<int> sortedA) {
     unordered_map<int, int> numberCounts;
@@ -199,10 +199,10 @@ TEST(SelectionSortTest, Negative) {
         ASSERT_TRUE(noDataLoss(initialA, sortedA)) << "Data loss detected";
 }
 
-TEST(QuickSortTest, BasicAssertions) {
+TEST(BubbleSortTest, BasicAssertions) {
     vector<int> A = {5, 2, 9, 1, 5, 6};
     vector<int> initialA = A;
-    quickSort(A);
+    bubbleSort(A);
     vector<int> sortedA = A;
 
     for (int i{0}; i<A.size()-1; i++)
@@ -213,10 +213,10 @@ TEST(QuickSortTest, BasicAssertions) {
         ASSERT_TRUE(noDataLoss(initialA, sortedA)) << "Data loss detected";
 }
 
-TEST(QuickSortTest, Reverse) {
+TEST(BubbleSortTest, Reverse) {
     vector<int> A = {6, 5, 1, 9, 2, 5};
     vector<int> initialA = A;
-    quickSort(A);
+    bubbleSort(A);
     vector<int> sortedA = A;
 
     for (int i{0}; i<A.size()-1; i++)
@@ -227,10 +227,10 @@ TEST(QuickSortTest, Reverse) {
         ASSERT_TRUE(noDataLoss(initialA, sortedA)) << "Data loss detected";
 }
 
-TEST(QuickSortTest, Empty) {
+TEST(BubbleSortTest, Empty) {
     vector<int> A = {};
     vector<int> initialA = A;
-    quickSort(A);
+    bubbleSort(A);
     vector<int> sortedA = A;
 
     for (int i{0}; i<A.size()-1; i++)
@@ -241,10 +241,10 @@ TEST(QuickSortTest, Empty) {
         ASSERT_TRUE(noDataLoss(initialA, sortedA)) << "Data loss detected";
 }
 
-TEST(QuickSortTest, Negative) {
+TEST(BubbleSortTest, Negative) {
     vector<int> A = {-5, -2, -9, -1, -5, -6};
     vector<int> initialA = A;
-    quickSort(A);
+    bubbleSort(A);
     vector<int> sortedA = A;
 
     for (int i{0}; i<A.size()-1; i++)
