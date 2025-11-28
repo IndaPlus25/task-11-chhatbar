@@ -2,14 +2,15 @@
 
 This repository contains implementations of insertion sort, merge sort, selection sort and quick sort. 
 
-# Dowloads: 
+# Downloads: 
 
 C/C++ (Microsoft) - Can be installed on VS Code
+
 C/C++ Extension pack (Microsoft) - Can be installed on VS Code
 
-# In Terminal
+# For Sorting Algorithms
 
-To compile, enter: g++ <file_name>.cpp -o main
+To compile c++ files, enter: g++ <file_name>.cpp -o main
 To execute, enter: ./main
 
 # For Visualization
