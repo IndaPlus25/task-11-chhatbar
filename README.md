@@ -23,3 +23,11 @@ To install Pygame graphics dependencies, enter:
 To install Pygame Python library, enter: pip3 install pygame
 
 To execute the visualization, enter: python3 insertionviz.py
+
+# Testing
+
+First create a new directory called "build". Then enter it. 
+
+Enter: cmake ..
+
+Then enter: cmake --build .
