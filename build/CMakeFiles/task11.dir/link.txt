@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/task11.dir/insertion.cpp.o CMakeFiles/task11.dir/quick.cpp.o CMakeFiles/task11.dir/selection.cpp.o CMakeFiles/task11.dir/merge.cpp.o -o task11 

@@ -7,7 +7,7 @@
 using namespace std;
 
 // Function to perform Selection Sort on a vector of integers
-vector <int> selectionsort(vector <int> A)
+vector <int> selectionSort(vector <int> A)
 {
 // Initialize the index 'i'. The outer loop iterates through the entire list 
 // (or up to the second-to-last element, as the last element will be sorted by then).
@@ -56,5 +56,10 @@ int main()
     // Call the selection sort function. 
     // The result is discarded and not printed or stored back into A, 
     // and the function call is likely to cause an infinite loop due to the missing 'j++' in the inner loop (see comment above).
-    selectionsort(A);
+    selectionSort(A);
+
+    for (auto x : A)
+    {
+        cout << x << " ";
+    }
 }

@@ -1,0 +1,6 @@
+/home/yashc/task-11-chhatbar/build/CMakeFiles/insertion.dir
+/home/yashc/task-11-chhatbar/build/CMakeFiles/quick.dir
+/home/yashc/task-11-chhatbar/build/CMakeFiles/merge.dir
+/home/yashc/task-11-chhatbar/build/CMakeFiles/selection.dir
+/home/yashc/task-11-chhatbar/build/CMakeFiles/edit_cache.dir
+/home/yashc/task-11-chhatbar/build/CMakeFiles/rebuild_cache.dir

@@ -49,7 +49,7 @@ vector <int> merge(vector <int> A, vector <int> B)
 }
 
 // Recursive function to perform the Top-Down Merge Sort.
-vector <int> mergesort(vector <int> A)
+vector <int> mergeSort(vector <int> A)
 {
     // Base Case: If the vector has only one element, it is already sorted.
     if (A.size() == 1)
@@ -73,8 +73,8 @@ vector <int> mergesort(vector <int> A)
     }
 
     // Step 2: Recursively sort the two halves.
-    left = mergesort(left);
-    right = mergesort(right);
+    left = mergeSort(left);
+    right = mergeSort(right);
 
     // Step 3: Combine the two sorted halves using the merge function.
     return merge(left, right);
@@ -84,9 +84,11 @@ int main()
 {
     // Define an unsorted vector of integers
     vector <int> A = {38, 27, 43, 3, 9, 82, 10};
-    // Call the mergesort function and store the resulting sorted vector back into A.
-    A = mergesort(A);
+    // Call the mergeSort function and store the resulting sorted vector back into A.
+    A = mergeSort(A);
     // After this line, vector A will be sorted: {3, 9, 10, 27, 38, 43, 82}
-    
-    // Typically, code would follow here to print the sorted vector A to the console.
+    for (auto x : A)
+    {
+        cout << x << " ";
+    }
 }

@@ -4,7 +4,7 @@
 using namespace std;
 
 // Function to perform Insertion Sort on a vector of integers
-vector <int> insertionsort(vector <int> A)
+vector <int> insertionSort(vector <int> A)
 {
 // Initialize the loop counter 'i'. The outer loop iterates from the second element (index 1) 
 // up to the end of the array, separating the sorted part (left) from the unsorted part (right).
@@ -39,6 +39,10 @@ int main()
     // Define an unsorted vector of integers
     vector <int> A = {5, 2, 9, 1, 5, 6};
     // Call the insertion sort function on vector A. 
-    // Note: The main function currently discards the returned sorted vector.
-    insertionsort(A);
+    A = insertionSort(A);
+
+    for (auto x : A)
+    {
+        cout << x << " ";
+    }
 }
